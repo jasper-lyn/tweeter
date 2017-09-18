@@ -19,15 +19,18 @@ body {}
     color: #e8fdff;
   }
 
-  .logo {
+  #nav-bar .logo {
+    float: left;
     width: 80px;
     height: 80px;
   }
 
 
-  .header {
-    display: inline;
-
+  #nav-bar .header {
+    float: left;
+    padding-left: 10px;
+    font-size: 180%;
+    line-height: 280%;
     }
 
 
