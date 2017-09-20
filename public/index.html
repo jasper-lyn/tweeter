@@ -16,11 +16,17 @@
     <!-- CSS nav -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
+    <!-- New tweet -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+
+    <!-- Character counter -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
   <body>
     <!-- Top nav bar (fixed) -->
@@ -30,10 +36,14 @@
     </nav>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <header>
-        A header
-      </header>
-      <p>Some text here</p>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form method="POST" action="/tweets/">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
     </main>
 
   </body>
