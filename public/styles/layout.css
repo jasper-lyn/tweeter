@@ -24,10 +24,10 @@ body {
 .container {
   width: 450px;
   padding-top: 140px;
+  padding-bottom:140px;
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  z-index: 1;
   background: #ffffff;
 }
 
