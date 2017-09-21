@@ -1,5 +1,7 @@
 $(document).ready(function() {
+
   $('textarea').on('keyup', function(event) {
-    console.log(140 - event.target.value.length);
+    var charset = (140 - event.target.value.length);
+    $(event.target).parent().children('.counter').text(charset);
   })
 })
